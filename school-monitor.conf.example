@@ -1,0 +1,12 @@
+[clickedu]
+url = https://your-school.clickedu.eu
+username = YOUR_USERNAME
+password = CHANGE_ME
+
+[telegram]
+bot_token = YOUR_TELEGRAM_BOT_TOKEN
+chat_id = YOUR_PRIVATE_CHAT_ID
+
+[settings]
+timezone = Europe/Madrid
+headless = true

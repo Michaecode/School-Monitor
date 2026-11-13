@@ -1,0 +1,9 @@
+[Unit]
+Description=School Monitor weekly Clickedu attendance report
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/School-Monitor
+ExecStart=%h/School-Monitor/.venv/bin/python %h/School-Monitor/bot.py

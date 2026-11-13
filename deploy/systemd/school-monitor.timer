@@ -1,0 +1,10 @@
+[Unit]
+Description=Run School Monitor every Friday evening
+
+[Timer]
+OnCalendar=Fri *-*-* 18:00:00
+Persistent=true
+Unit=school-monitor.service
+
+[Install]
+WantedBy=timers.target

@@ -2,7 +2,7 @@
 
 import asyncio
 import logging
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
 from clickedu import ClickeduClient
@@ -17,7 +17,7 @@ def configure_logging() -> None:
 
 
 def current_school_week(timezone_name: str) -> tuple[date, date]:
-    today = date.today()
+    today = datetime.now(ZoneInfo(timezone_name)).date()
     # Monday-Friday of the current week.
     monday = today - timedelta(days=today.weekday())
     return monday, monday + timedelta(days=4)

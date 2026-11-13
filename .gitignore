@@ -1,5 +1,6 @@
 # Local secrets and configuration
 .school-monitor.conf
+school-monitor.conf
 *.secret
 .env
 .env.*
